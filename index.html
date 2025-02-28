@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Route - Indian Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/000000/tandoori-chicken.png" alt="logo">
+                Spice Route
+            </div>
+            <div class="nav-items">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#cart">Cart <span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Authentic Indian Cuisine</h1>
+                <p>Delivered fresh to your doorstep</p>
+                <a href="#menu" class="cta-button">Explore Menu</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/delivery-time.png" alt="Fast Delivery">
+                <h3>Quick Delivery</h3>
+                <p>30 minutes or free</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/warranty.png" alt="Fresh Food">
+                <h3>Fresh Food</h3>
+                <p>100% Fresh Ingredients</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/discount.png" alt="Best Offers">
+                <h3>Best Offers</h3>
+                <p>Daily Special Deals</p>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2>Our Menu</h2>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Course</button>
+                <button class="category-btn" data-category="breads">Breads</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <!-- Menu items will be dynamically populated -->
+            </div>
+        </section>
+
+        <section class="popular-dishes">
+            <h2>Most Popular Dishes</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=500&q=60" alt="Butter Chicken">
+                    <h3>Butter Chicken</h3>
+                    <p>Our signature dish</p>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=500&q=60" alt="Biryani">
+                    <h3>Hyderabadi Biryani</h3>
+                    <p>Aromatic rice dish</p>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=500&q=60" alt="Paneer Tikka">
+                    <h3>Paneer Tikka</h3>
+                    <p>Grilled to perfection</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section" id="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically populated -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: ₹<span id="total-amount">0</span></h3>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>📞 Phone: +91 1234567890</p>
+                <p>📧 Email: info@spiceroute.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Spice Route. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
